@@ -44,4 +44,5 @@ def trap_logs():
     return render_template("trap_logs.html", logs=logs)
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    debug_mode = os.getenv("FLASK_ENV") == "development"
+    app.run(debug=debug_mode, port=5000)
