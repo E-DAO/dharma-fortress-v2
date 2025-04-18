@@ -1,0 +1,15 @@
+site_name: YinYang Deception™
+site_url: https://E-DAO.github.io/yinyang-deception-engine/  # GitHub Pages URL
+repo_url: https://github.com/E-DAO/yinyang-deception-engine  # GitHub repository URL
+theme:
+  name: material
+  palette:
+    primary: blue-grey
+    accent: deep-orange
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Trap Zones: traps.md
+  - DAO Governance: dao.md
+  - Patent Filings: patents.md
+  - Contact: contact.md

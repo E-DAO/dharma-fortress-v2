@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1.0">
+    <title>YinYang Deception Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: lightgreen;
+            border: 1px solid green;
+            display: none;
+        }
+        #report_section {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: lightblue;
+            border: 1px solid blue;
+            display: none;
+        }
+        #simulate_attack_button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #simulate_attack_button:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>YinYang Deception Engine Simulation</h1>
+    
+    <!-- Button to simulate attack -->
+    <button id="simulate_attack_button">Simulate Attack</button>
+    
+    <!-- Result section (this will be shown after clicking the 
+button) -->
+    <div id="result">
+        <h2>Simulation Result</h2>
+        <p id="simulation_result">Simulation Complete!</p>
+    </div>
+    
+    <!-- Report section (this will be shown after simulation is 
+complete) -->
+    <div id="report_section">
+        <h2>Simulation Report</h2>
+        <p>This is the detailed simulation report.</p>
+    </div>
+
+    <script>
+        // JavaScript function to simulate the attack and show 
+results
+        
+document.getElementById('simulate_attack_button').addEventListener('click', 
+function() {
+            // Simulate the attack by showing the result and report 
+after 2 seconds
+            setTimeout(function() {
+                // Show the result
+                document.getElementById('result').style.display = 
+'block';
+
+                // Show the report
+                
+document.getElementById('report_section').style.display = 'block';
+            }, 2000); // Wait for 2 seconds before showing the 
+results
+        });
+    </script>
+</body>
+</html>
+

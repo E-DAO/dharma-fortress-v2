@@ -1,0 +1,4 @@
+{"timestamp": "2025-04-12T18:54:48.203333", "user_id": "0xdef", "event": "TRAP", "details": {"risk": 54.24}}
+{"timestamp": "2025-04-12T19:20:57.509869", "user_id": "0xdef", "event": "REINSTATED", "details": {"new_karma": 0.6000000000000001}}
+{"timestamp": "2025-04-12T19:41:22.743861", "user_id": "0x999", "event": "TRAP", "details": {"risk": 53.35999999999999}}
+{"timestamp": "2025-04-12T19:46:49.926895", "user_id": "0x999", "event": "BANNED", "details": {"karma": 0.1}}

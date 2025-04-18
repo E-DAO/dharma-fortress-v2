@@ -1,0 +1,128 @@
+.env
+.env
+# ============================
+# General File Types to Ignore
+# ============================
+
+# Log files
+*.log
+*.log.*
+*.out
+*.err
+
+# ========================
+# Python Project Files
+# ========================
+
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.db
+*.sqlite3
+
+# Virtual environment directories
+venv/
+env/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+*.egg
+*.egg-info
+dist/
+build/
+eggs/
+sdist/
+wheels/
+*.tar.gz
+*.zip
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Coverage reports (from pytest, etc.)
+.coverage
+*.cover
+*.hypothesis/
+
+# ==========================
+# Node.js Project Files
+# ==========================
+
+# Node.js modules
+node_modules/
+
+# npm debug log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# Dependency directories
+jspm_packages/
+
+# ==========================
+# IDE/Editor-related files
+# ==========================
+
+# VS Code settings
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+
+# JetBrains project files
+*.iml
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Emacs
+*~
+
+# Vim swap files
+*.swp
+
+# ==========================
+# Operating System-specific files
+# ==========================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# ==========================
+# Environment Files (Sensitive)
+# ==========================
+.env
+*.env
+
+# ==========================
+# Miscellaneous Files
+# ==========================
+# Backup files
+*.bak
+*.tmp
+*.swp
+
+# Ignore IDE-specific build outputs
+*.class
+
+# ==========================
+# Custom Folders (Add any additional folders you want to ignore)
+# ==========================
+# Examples:
+# secret_data/
+# my_private_folder/
+# .temp_files/
+
+
+openAI_config.json

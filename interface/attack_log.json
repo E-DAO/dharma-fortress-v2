@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2025-04-05T10:26:11.276419",
+    "attacker": "0x43af3cc",
+    "attack_type": "flashloan",
+    "result": "BLOCKED"
+  },
+  {
+    "timestamp": "2025-04-05T10:26:11.285237",
+    "attacker": "0xd4daa5",
+    "attack_type": "reentrancy",
+    "result": "TRAP_TRIGGERED"
+  },
+  {
+    "timestamp": "2025-04-05T10:26:11.285296",
+    "attacker": "0x4c4d781",
+    "attack_type": "impersonation",
+    "result": "ESCALATED"
+  },
+  {
+    "timestamp": "2025-04-05T10:26:11.285322",
+    "attacker": "0x1589b7f",
+    "attack_type": "overflow",
+    "result": "TRAP_TRIGGERED"
+  },
+  {
+    "timestamp": "2025-04-05T10:26:11.285341",
+    "attacker": "0x4e2021a",
+    "attack_type": "overflow",
+    "result": "TRAP_TRIGGERED"
+  },
+  {
+    "timestamp": "2025-04-05T10:26:11.285357",
+    "attacker": "0x2881003",
+    "attack_type": "impersonation",
+    "result": "TRAP_TRIGGERED"
+  },
+  {
+    "timestamp": "2025-04-05T10:26:11.285373",
+    "attacker": "0x385e178",
+    "attack_type": "reentrancy",
+    "result": "TRAP_TRIGGERED"
+  },
+  {
+    "timestamp": "2025-04-05T10:26:11.285388",
+    "attacker": "0x5524c9c",
+    "attack_type": "impersonation",
+    "result": "ESCALATED"
+  },
+  {
+    "timestamp": "2025-04-05T10:26:11.285401",
+    "attacker": "0x594a690",
+    "attack_type": "flashloan",
+    "result": "BLOCKED"
+  },
+  {
+    "timestamp": "2025-04-05T10:26:11.285415",
+    "attacker": "0x4b393c6",
+    "attack_type": "overflow",
+    "result": "BYPASSED"
+  }
+]

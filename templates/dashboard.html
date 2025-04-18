@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deception Dashboard</title>
+</head>
+<body style="background:#111;color:#eee;font-family:monospace;padding:2em;">
+  <h1>🧠 Deception Engine Dashboard</h1>
+
+  <form action="/simulate" method="post">
+    <label>User ID:</label><br>
+    <input type="text" name="user_id" value="0xabc"><br><br>
+    <label>Actions (comma-separated):</label><br>
+    <input type="text" name="actions" value="10,20,30"><br><br>
+    <button type="submit">Simulate</button>
+  </form>
+
+  <h2>Current Karma</h2>
+  <ul>
+    {% for user, karma in users.items() %}
+      <li>{{ user }} → {{ karma }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Recent Logs</h2>
+  <ul>
+    {% for log in logs[-5:] %}
+      <li>[{{ log.timestamp }}] {{ log.user_id }} → {{ log.event }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
+

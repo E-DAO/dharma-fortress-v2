@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🧠 Deception Engine Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        body { font-family: monospace; background: #111; color: #eee; padding: 2em; }
+        h1 { color: #0f0; }
+        button {
+            margin: 0.3em;
+            padding: 0.5em 1em;
+            background-color: #222;
+            color: #eee;
+            border: 1px solid #444;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0f0;
+            color: #000;
+        }
+        .trusted { color: #0f0; }
+        .borderline { color: #ff0; }
+        .at-risk { color: #f33; }
+        .log { margin-top: 2em; padding: 1em; background: #222; border: 1px solid #333; }
+        pre { background: #000; padding: 1em; color: #0f0; }
+    </style>
+</head>
+<body>
+    <h1>🧠 Deception Engine Dashboard</h1>
+
+    <form method="post" action="/dashboard">
+        <button name="action" value="risk_safe">✅ Test Safe User</button>
+        <button name="action" value="risk_risky">⚠️ Test Risky User</button>
+        <button name="action" value="risk_banned">🚫 Test Banned User</button>
+        <button name="action" value="redeem">♻️ Test Redemption</button>
+    </form>
+
+    {% if result %}
+    <div style="margin-top: 2em; background: #222; padding: 1em;">
+        <strong>Result:</strong><br>
+        <pre>{{ result }}</pre>
+    </div>
+    {% endif %}
+
+    <h2>Karma Levels</h2>
+    <ul>
+    {% for user, karma in users.items() %}
+        <li>
+            {{ user }} →
+            <span class="{% if karma >= 0.75 %}trusted{% elif karma >= 0.5 %}borderline{% else %}at-risk{% endif %}">
+                {{ '%.2f' % karma }}
+            </span>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <div class="log">
+        <h2>Recent Events</h2>
+        <ul>
+        {% for entry in logs[-10:] %}
+            <li>[{{ entry.timestamp }}] {{ entry.user_id }} → {{ entry.event }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
