@@ -13,6 +13,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code
 COPY . /app
 
+# Make the start_services.sh script executable
+RUN chmod +x /app/start_services.sh
+
 # Expose the ports for FastAPI (8000) and Streamlit (8501)
 EXPOSE 8000  # For FastAPI
 EXPOSE 8501  # For Streamlit
