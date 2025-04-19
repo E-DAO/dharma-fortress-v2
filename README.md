@@ -1,4 +1,8 @@
-# ☯ YinYang Deception Engine
+
+
+# ☯ YinYang Deception v1
+
+Engine mode
 
 **Karma-aligned deception infrastructure for symbolic AI behavior control.**
 
@@ -24,6 +28,7 @@ Provides risk assessments for actions, decisions, and agent interactions.
 Yang (Simulation Engine):
 
 Purpose: Simulates real-world scenarios, including agent interactions, ethical decisions, karma tracking, and trap management.
+
 Functionality:
 Uses data from the Yin engine to simulate outcomes of actions in different scenarios.
 Trap management: Determines which trap (e.g., Echo Trap, Black Hole Trap) should be triggered based on agent behavior and entropy.
@@ -59,6 +64,8 @@ jinja2==3.0.3
 sqlalchemy==1.4.22
 databases==0.5.4
 pydantic==1.8.2
+
+
 3. config.py
 This file stores your configuration, such as the mode of the system (SIMULATION or REAL).
 
@@ -93,25 +100,10 @@ Edit
 ~/github/yinyang-deception-engine/deception_engine/requirements.txt
 Double-check it includes:
 
-txt
-Copy
-Edit
-fastapi
-uvicorn
-jinja2
-✅ Step 3: Project Structure Recap
-Render will expect this layout:
-
-arduino
-Copy
-Edit
-
-
-
-
 
 
 yinyang-deception-engine/
+
 ├── deception_engine/
 │   ├── main.py                 ✅ FastAPI entry
 │   ├── karma.py, traps.py, ...
@@ -121,57 +113,6 @@ yinyang-deception-engine/
 │   └── data/
 ├── render.yaml                 ✅ Deployment config
 ├── README.md
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-✅ Step 4: Push to GitHub
-From your project root:
-
-bash
-Copy
-Edit
-cd ~/github/yinyang-deception-engine
-git add .
-git commit -m "Deployment ready: structure + render config"
-git push origin main
-✅ Step 5: Deploy on https://render.com
-Sign in / Create account
-
-Click New Web Service
-
-Connect to your repo
-
-Render detects render.yaml
-
-Click Deploy
-
-🎉 Get a link like:
-
-arduino
-Copy
-Edit
-https://yinyang-deception.onrender.com/dashboard
-
-
 
 
 
